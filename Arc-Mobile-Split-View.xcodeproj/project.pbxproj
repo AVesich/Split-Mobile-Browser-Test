@@ -11,6 +11,11 @@
 		D90A42812C852026001D591A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90A42802C852026001D591A /* ContentView.swift */; };
 		D90A42832C852027001D591A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90A42822C852027001D591A /* Assets.xcassets */; };
 		D90A42862C852027001D591A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D90A42852C852027001D591A /* Preview Assets.xcassets */; };
+		D90A428D2C852043001D591A /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90A428C2C85203E001D591A /* WebView.swift */; };
+		D90A42912C852396001D591A /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90A42902C852393001D591A /* Tab.swift */; };
+		D90A42942C852A97001D591A /* WebTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90A42932C852A97001D591A /* WebTabView.swift */; };
+		D9EAAC032C855CFB00F28287 /* SnapLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EAAC022C855CF900F28287 /* SnapLocationView.swift */; };
+		D9EAAC052C85653D00F28287 /* SnapTargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EAAC042C85653700F28287 /* SnapTargetView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,12 @@
 		D90A42802C852026001D591A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D90A42822C852027001D591A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D90A42852C852027001D591A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D90A428C2C85203E001D591A /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		D90A42902C852393001D591A /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		D90A42922C85267C001D591A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D90A42932C852A97001D591A /* WebTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebTabView.swift; sourceTree = "<group>"; };
+		D9EAAC022C855CF900F28287 /* SnapLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapLocationView.swift; sourceTree = "<group>"; };
+		D9EAAC042C85653700F28287 /* SnapTargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapTargetView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +62,11 @@
 		D90A427D2C852026001D591A /* Arc-Mobile-Split-View */ = {
 			isa = PBXGroup;
 			children = (
+				D90A42922C85267C001D591A /* Info.plist */,
 				D90A427E2C852026001D591A /* Arc_Mobile_Split_ViewApp.swift */,
-				D90A42802C852026001D591A /* ContentView.swift */,
+				D90A42952C852E63001D591A /* Misc */,
+				D90A428F2C852385001D591A /* Models */,
+				D90A428E2C85237B001D591A /* Views */,
 				D90A42822C852027001D591A /* Assets.xcassets */,
 				D90A42842C852027001D591A /* Preview Content */,
 			);
@@ -65,6 +79,33 @@
 				D90A42852C852027001D591A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D90A428E2C85237B001D591A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D9EAAC042C85653700F28287 /* SnapTargetView.swift */,
+				D9EAAC022C855CF900F28287 /* SnapLocationView.swift */,
+				D90A428C2C85203E001D591A /* WebView.swift */,
+				D90A42802C852026001D591A /* ContentView.swift */,
+				D90A42932C852A97001D591A /* WebTabView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D90A428F2C852385001D591A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D90A42902C852393001D591A /* Tab.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D90A42952C852E63001D591A /* Misc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Misc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +178,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D90A42942C852A97001D591A /* WebTabView.swift in Sources */,
+				D90A428D2C852043001D591A /* WebView.swift in Sources */,
 				D90A42812C852026001D591A /* ContentView.swift in Sources */,
+				D9EAAC052C85653D00F28287 /* SnapTargetView.swift in Sources */,
 				D90A427F2C852026001D591A /* Arc_Mobile_Split_ViewApp.swift in Sources */,
+				D90A42912C852396001D591A /* Tab.swift in Sources */,
+				D9EAAC032C855CFB00F28287 /* SnapLocationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,6 +321,7 @@
 				DEVELOPMENT_TEAM = 4ZQHT294V9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Arc-Mobile-Split-View/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -304,6 +351,7 @@
 				DEVELOPMENT_TEAM = 4ZQHT294V9;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Arc-Mobile-Split-View/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
