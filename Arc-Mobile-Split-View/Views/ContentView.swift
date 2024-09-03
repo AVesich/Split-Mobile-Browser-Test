@@ -10,27 +10,54 @@ import SwiftUI
 struct ContentView: View {
     
 //    let tabData: Tab = .defaultTab
-    
+//    let blueLocation = SnapLocationView {
+//        RoundedRectangle(cornerRadius: 16.0)
+//            .fill(.blue)
+//    }
+    @State public var frame1: CGRect = .zero
+    @State public var frame2: CGRect = .zero
+    @State public var frame3: CGRect = .zero
+    @State public var frame4: CGRect = .zero
+    @State private var locations = [Binding<CGRect>]()
     
     var body: some View {
         ZStack {
-            VStack(spacing: 24.0) {
-                SnapLocationView(targetIsDragging: .constant(false),
-                                 debugColor: .red)
-                .clipShape(RoundedRectangle(cornerRadius: 16.0))
-//                RoundedRectangle(cornerRadius: 16.0)
-//                    .fill(.red)
-//                    .gesture(
-//                        TapGesture()
-//                            .onEnded { 
-//                                print("red")
-//                            }
-//                    )
-                RoundedRectangle(cornerRadius: 16.0)
-                    .fill(.blue)
+            HStack(spacing: 24.0) {
+                VStack(spacing: 24.0) {
+                    SnapLocationView(frame: $frame1) {
+                        RoundedRectangle(cornerRadius: 16.0)
+                            .fill(.red)
+                    }
+                    .clipShape(RoundedRectangle(cornerRadius: 16.0))
+                    SnapLocationView(frame: $frame2) {
+                        RoundedRectangle(cornerRadius: 16.0)
+                            .fill(.blue)
+                    }
+                    .clipShape(RoundedRectangle(cornerRadius: 16.0))
+                }
+                VStack(spacing: 24.0) {
+                    SnapLocationView(frame: $frame3) {
+                        RoundedRectangle(cornerRadius: 16.0)
+                            .fill(.green)
+                    }
+                    .clipShape(RoundedRectangle(cornerRadius: 16.0))
+                    SnapLocationView(frame: $frame4) {
+                        RoundedRectangle(cornerRadius: 16.0)
+                            .fill(.purple)
+                    }
+                    .clipShape(RoundedRectangle(cornerRadius: 16.0))
+                }
             }
             .padding()
-//            WebTabView()
+            SnappingView(snappableFrames: [frame1, frame2, frame3, frame4]) {
+                WebTabView()
+//                    .clipShape(RoundedRectangle(cornerRadius: 16.0))
+            }
+        }
+        .coordinateSpace(name: "SnappingSpace")
+        .onAppear {
+//            locations.append(redLocation.$frame)
+//            locations.append(blueLocation.$frame)
         }
     }
 }

@@ -15,7 +15,7 @@
 		D90A42912C852396001D591A /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90A42902C852393001D591A /* Tab.swift */; };
 		D90A42942C852A97001D591A /* WebTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D90A42932C852A97001D591A /* WebTabView.swift */; };
 		D9EAAC032C855CFB00F28287 /* SnapLocationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EAAC022C855CF900F28287 /* SnapLocationView.swift */; };
-		D9EAAC052C85653D00F28287 /* SnapTargetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EAAC042C85653700F28287 /* SnapTargetView.swift */; };
+		D9EAAC052C85653D00F28287 /* SnappingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EAAC042C85653700F28287 /* SnappingView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,7 +29,7 @@
 		D90A42922C85267C001D591A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		D90A42932C852A97001D591A /* WebTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebTabView.swift; sourceTree = "<group>"; };
 		D9EAAC022C855CF900F28287 /* SnapLocationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapLocationView.swift; sourceTree = "<group>"; };
-		D9EAAC042C85653700F28287 /* SnapTargetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapTargetView.swift; sourceTree = "<group>"; };
+		D9EAAC042C85653700F28287 /* SnappingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnappingView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,7 @@
 		D90A428E2C85237B001D591A /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D9EAAC042C85653700F28287 /* SnapTargetView.swift */,
+				D9EAAC042C85653700F28287 /* SnappingView.swift */,
 				D9EAAC022C855CF900F28287 /* SnapLocationView.swift */,
 				D90A428C2C85203E001D591A /* WebView.swift */,
 				D90A42802C852026001D591A /* ContentView.swift */,
@@ -181,7 +181,7 @@
 				D90A42942C852A97001D591A /* WebTabView.swift in Sources */,
 				D90A428D2C852043001D591A /* WebView.swift in Sources */,
 				D90A42812C852026001D591A /* ContentView.swift in Sources */,
-				D9EAAC052C85653D00F28287 /* SnapTargetView.swift in Sources */,
+				D9EAAC052C85653D00F28287 /* SnappingView.swift in Sources */,
 				D90A427F2C852026001D591A /* Arc_Mobile_Split_ViewApp.swift in Sources */,
 				D90A42912C852396001D591A /* Tab.swift in Sources */,
 				D9EAAC032C855CFB00F28287 /* SnapLocationView.swift in Sources */,
